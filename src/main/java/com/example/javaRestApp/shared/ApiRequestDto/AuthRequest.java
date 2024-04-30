@@ -1,4 +1,4 @@
-package com.example.javaRestApp.DTO;
+package com.example.javaRestApp.shared.ApiRequestDto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

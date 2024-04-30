@@ -1,6 +1,6 @@
-package com.example.javaRestApp.config;
+package com.example.javaRestApp.shared.SecurityConfigFiles;
 
-import com.example.javaRestApp.service.UserServiceProvider;
+import com.example.javaRestApp.service.UserServices.UserServiceProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -60,7 +60,7 @@ public class SecurityConfig {
             httpSecurity.cors(cors -> cors.disable()).csrf(csrf -> csrf.disable());
 
             httpSecurity.authorizeHttpRequests(
-                    authorizationManagerRequestMatcherRegistry -> authorizationManagerRequestMatcherRegistry.requestMatchers("/userRegister","/gettoken")
+                    authorizationManagerRequestMatcherRegistry -> authorizationManagerRequestMatcherRegistry.requestMatchers("/developerRegister","/adminRegister","/userRegister","/getToken")
                             .permitAll().anyRequest().authenticated()
             );
             httpSecurity.addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);

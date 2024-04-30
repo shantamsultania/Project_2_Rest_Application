@@ -1,5 +1,6 @@
-package com.example.javaRestApp.utils;
+package com.example.javaRestApp.shared.SecurityConfigFiles;
 
+import com.example.javaRestApp.shared.utils.Constants;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -15,8 +16,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Function;
 
-import static com.example.javaRestApp.utils.SecurityConstants.SECRET;
-
 @Component
 public class JwtGeneratorValidator {
 
@@ -28,13 +27,13 @@ public class JwtGeneratorValidator {
     }
 
     private Key getSigningKey1() {
-        byte[] keyBytes = Decoders.BASE64.decode(SECRET);
+        byte[] keyBytes = Decoders.BASE64.decode(Constants.SECRET);
         return Keys.hmacShaKeyFor(keyBytes);
 
     }
 
     private Key getSigningKey() {
-        byte[] keyBytes = SECRET.getBytes(StandardCharsets.UTF_8);
+        byte[] keyBytes = Constants.SECRET.getBytes(StandardCharsets.UTF_8);
         return Keys.hmacShaKeyFor(keyBytes);
     }
 

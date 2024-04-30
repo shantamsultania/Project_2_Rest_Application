@@ -1,5 +1,6 @@
-package com.example.javaRestApp.entiy;
+package com.example.javaRestApp.shared.UserEntities;
 
+import com.example.javaRestApp.shared.utils.Role;
 import jakarta.persistence.*;
 import lombok.*;
 

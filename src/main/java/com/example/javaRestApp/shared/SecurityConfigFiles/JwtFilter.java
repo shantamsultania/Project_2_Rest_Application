@@ -1,7 +1,6 @@
-package com.example.javaRestApp.config;
+package com.example.javaRestApp.shared.SecurityConfigFiles;
 
-import com.example.javaRestApp.service.UserServiceProvider;
-import com.example.javaRestApp.utils.JwtGeneratorValidator;
+import com.example.javaRestApp.service.UserServices.UserServiceProvider;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

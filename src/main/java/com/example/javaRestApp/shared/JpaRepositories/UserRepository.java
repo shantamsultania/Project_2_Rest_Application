@@ -1,6 +1,6 @@
-package com.example.javaRestApp.respository;
+package com.example.javaRestApp.shared.JpaRepositories;
 
-import com.example.javaRestApp.entiy.User;
+import com.example.javaRestApp.shared.UserEntities.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

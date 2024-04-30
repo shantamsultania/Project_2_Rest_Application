@@ -1,7 +1,6 @@
-package com.example.javaRestApp.service;
+package com.example.javaRestApp.service.UserServices;
 
-import com.example.javaRestApp.DTO.UserRequestDto;
-import com.example.javaRestApp.entiy.User;
+import com.example.javaRestApp.shared.UserEntities.User;
 import org.springframework.security.core.userdetails.UserDetailsService;
 
 import java.util.List;

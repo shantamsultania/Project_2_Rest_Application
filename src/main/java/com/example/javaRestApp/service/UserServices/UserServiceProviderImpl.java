@@ -1,8 +1,8 @@
-package com.example.javaRestApp.service;
+package com.example.javaRestApp.service.UserServices;
 
-import com.example.javaRestApp.DTO.UserRequestDto;
-import com.example.javaRestApp.entiy.User;
-import com.example.javaRestApp.respository.UserRepository;
+import com.example.javaRestApp.service.UserServices.UserServiceProvider;
+import com.example.javaRestApp.shared.UserEntities.User;
+import com.example.javaRestApp.shared.JpaRepositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
