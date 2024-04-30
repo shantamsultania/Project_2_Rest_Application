@@ -1,13 +1,11 @@
-package com.example.javaRestApp.models;
+package com.example.javaRestApp.entiy;
 
 import jakarta.persistence.*;
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Data
-@Getter
-@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "user_table")
 @Entity
 public class User {

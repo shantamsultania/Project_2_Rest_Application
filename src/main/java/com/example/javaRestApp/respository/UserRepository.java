@@ -1,6 +1,6 @@
 package com.example.javaRestApp.respository;
 
-import com.example.javaRestApp.models.User;
+import com.example.javaRestApp.entiy.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

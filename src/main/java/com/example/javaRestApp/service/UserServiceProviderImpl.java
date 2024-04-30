@@ -1,6 +1,7 @@
 package com.example.javaRestApp.service;
 
-import com.example.javaRestApp.models.User;
+import com.example.javaRestApp.DTO.UserRequestDto;
+import com.example.javaRestApp.entiy.User;
 import com.example.javaRestApp.respository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;

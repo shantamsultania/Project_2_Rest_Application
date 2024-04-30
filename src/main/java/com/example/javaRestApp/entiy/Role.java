@@ -1,4 +1,4 @@
-package com.example.javaRestApp.models;
+package com.example.javaRestApp.entiy;
 
 public enum Role {
 
